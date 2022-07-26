@@ -1,6 +1,9 @@
 name: CI-Tests
 
-on: push
+on: 
+  push:
+    branches:
+      - prod
 
 jobs:
   requirements-test:
@@ -15,4 +18,3 @@ jobs:
         run: |
           npm ci
           npm run
-
